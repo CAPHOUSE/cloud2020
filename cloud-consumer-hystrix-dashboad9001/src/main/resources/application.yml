@@ -1,0 +1,13 @@
+server:
+  port: 9001
+
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "localhost"
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'hystrix.stream'
